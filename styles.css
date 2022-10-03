@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+*{
+    margin: 0;
+}
+
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    
+}
+.container{
+    width: 50vh;
+    margin: auto;
+}
+
+header{
+    background-color: crimson;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+#header-h1{
+    width: 1200px;
+  max-width: calc(100% - 20px);
+  margin: 0 auto;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content:center ;
+}
+
+#add-task-btn{
+    margin: 1rem;
+}
