@@ -6,6 +6,9 @@ function addTaskToList(){
     let list = document.createElement("li")
     list.innerHTML = taskItems.value;
     taskList.appendChild(list)
+    if(taskItems.value == taskItems.value){
+        alert("enter unique task")
+    }
 }
 
 addTaskBtn.addEventListener("click", addTaskToList)
