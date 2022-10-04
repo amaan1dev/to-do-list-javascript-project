@@ -6,9 +6,25 @@ function addTaskToList(){
     let list = document.createElement("li")
     list.innerHTML = taskItems.value;
     taskList.appendChild(list)
-    if(taskItems.value == taskItems.value){
-        alert("enter unique task")
-    }
+    
 }
 
 addTaskBtn.addEventListener("click", addTaskToList)
+
+taskItems.addEventListener("keydown", function(event) {
+    if (!event) {
+       var event = window.event;
+    }
+       event.preventDefault();
+    if (event.keyCode == 13){
+       login();
+    }
+ }, false);
+ function login(){
+    console.log("submitted successfully....");
+ }
+
+
+function clearTextBox (){
+    taskItems.value = "";
+}
