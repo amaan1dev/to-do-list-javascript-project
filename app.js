@@ -31,17 +31,24 @@ function addTodo(event) {
 
    // check trash button
 
-   // insert an emoji inside the todoDiv
+   // insert an emoji inside the todoDiv to check my code
 
-   const emojiIcon = document.createElement("div")
-   emojiIcon.innerText = "😘";
-   emojiIcon.classList.add("emoji-icon");
-   todoDiv.appendChild(emojiIcon);
+   // const emojiIcon = document.createElement("div")
+   // emojiIcon.innerText = "😘";
+   // emojiIcon.classList.add("emoji-icon");
+   // todoDiv.appendChild(emojiIcon);
+
+   // space 
 
    const trashBtn = document.createElement("button");
    trashBtn.innerHTML = '<i class = "fas fa-trash"></i>';
    trashBtn.classList.add("complete-btn");
    todoDiv.appendChild(trashBtn);
+
+   trashBtn.addEventListener("click", clearTask)
+   function clearTask(){
+      todoDiv.innerText = "bhak chutiye";
+   }
 
    // append to list
 
