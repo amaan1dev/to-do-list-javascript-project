@@ -43,3 +43,40 @@ form button{
     color: white;
  }
 
+.todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.todo-list{
+    list-style-type: none;
+    min-width: 30%;
+
+}
+
+.todo{
+    margin: .5rem;
+    color: black;
+    background: white;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todo li{
+    flex: 1;
+}
+
+.trash-btn, .complete-btn{
+    background: #ff6f47;
+    color: white;
+    border: none;
+    padding: .6rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.complete-btn{
+    background: rgb(47, 150, 47);
+}

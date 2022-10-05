@@ -25,7 +25,7 @@ function addTodo(event) {
    // check mark button
 
    const completedBtn = document.createElement("button");
-   completedBtn.innerHTML = '<i class = "fas fa-check"></i>submit';
+   completedBtn.innerHTML = '<i class = "fas fa-check"></i>';
    completedBtn.classList.add("complete-btn");
    todoDiv.appendChild(completedBtn);
 
@@ -47,7 +47,7 @@ function addTodo(event) {
 
    trashBtn.addEventListener("click", clearTask)
    function clearTask(){
-      todoDiv.innerText = "bhak chutiye";
+      todoDiv.innerText = "";
    }
 
    // append to list
